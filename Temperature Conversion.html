@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Temperature Conversion</title>
+</head>
+<body>
+	<b>Fahrenheit to Celsius:</b><p id="conversion"></p><br />
+	<b>Celsius to Fahrenheit:</b><p id="celsiusToFahrenheit"></p>
+	<script>
+		// FAHRENHEIT TO CELSIUS
+		var x = 70;
+		function fahrenheitToCelsius(x) {
+			x = (x - 32) * 0.5556;
+			return x;
+		};
+		document.getElementById("conversion").innerHTML = fahrenheitToCelsius(x);
+
+		// CELSIUS TO FAHRENHEIT
+		var y = 25;
+		function celsiusToFahrenheit(y) {
+			y *= 1.8 + 32;
+			return y;
+		}
+		document.getElementById("celsiusToFahrenheit").innerHTML = celsiusToFahrenheit(y);
+	</script>
+</body>
+</html>
